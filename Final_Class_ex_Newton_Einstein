@@ -1,0 +1,23 @@
+
+package Day_10_final_abstraction;
+final class Science{
+	static void newton(int first,int second) {
+		System.out.println("After applying Newton's law, force F = "+(first*second));
+	}
+	static void einstein(int first,int second) {
+		int ans=first*(second*second);
+		System.out.println("After applying Einstein's law, Enery E = "+ans);
+	}
+}
+
+public class Final_Class_ex_Newton_Einstein {
+
+	public static void main(String[] args) {
+		int first=Integer.parseInt(args[0]);
+		int second=Integer.parseInt(args[1]);
+		Science.newton(first,second);
+		Science.einstein(first,second);
+
+	}
+
+}
