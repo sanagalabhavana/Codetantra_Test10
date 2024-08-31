@@ -1,0 +1,17 @@
+package Day_10_final_abstraction;
+
+public class Final_variable_ex_result {
+
+	public static void main(String[] args) {
+		final int a=45;
+		final double pi=3.14;
+		double res=0;
+		int x=Integer.parseInt(args[0]);
+		int y=Integer.parseInt(args[1]);
+		double z=Double.parseDouble(args[2]);
+		res=x*y+a+pi*z;
+		System.out.println("The result is "+res);
+
+	}
+
+}
