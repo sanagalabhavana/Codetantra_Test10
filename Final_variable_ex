@@ -1,0 +1,16 @@
+package Day_10_final_abstraction;
+
+public class Final_variable_ex {
+
+	public static void main(String[] args) {
+		final double num;
+		num=Double.parseDouble(args[0]);
+		System.out.println("Final number is: "+num);
+		double ans1=2*num;
+		System.out.println("Final number multiplied with 2: "+ans1);
+		double ans2=4+num;
+		System.out.println("Final number added with 4: "+ans2);
+
+	}
+
+}
