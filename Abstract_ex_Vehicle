@@ -1,0 +1,22 @@
+package Day_10_final_abstraction;
+
+abstract class Vehicle{
+	abstract void description(int numOfWheels,String typeOfVehicle);
+}
+class Category extends Vehicle{
+	void description(int numOfWheels,String typeOfVehicle) {
+		System.out.println("The number of wheels in a "+typeOfVehicle+" are "+numOfWheels);
+		}
+}
+
+public class Abstract_ex_Vehicle {
+
+	public static void main(String[] args) {
+		int numOfWheels=Integer.parseInt(args[0]);
+		String typeOfVehicle=args[1];
+		Vehicle b1=new Category();
+		b1.description(numOfWheels,typeOfVehicle);
+
+	}
+
+}
