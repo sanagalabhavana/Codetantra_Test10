@@ -1,0 +1,18 @@
+package Day_10_final_abstraction;
+
+class Vehicle{
+	final void startEngine(String s) {
+		System.out.println("The "+s+" engine starts.");
+	}
+}
+
+public class Final_method_ex extends Vehicle{
+
+	public static void main(String[] args) {
+		String s=args[0];
+		Final_method_ex m=new Final_method_ex();
+		m.startEngine(s);
+
+	}
+
+}
