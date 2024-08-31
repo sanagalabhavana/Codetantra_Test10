@@ -1,0 +1,28 @@
+package Day_10_final_abstraction;
+
+import java.util.Scanner;
+abstract class Book{
+	String title;
+	abstract void setTitle(String s);
+	String getTitle() {
+		return title;
+	}
+}
+class MyBook extends Book{
+	void setTitle(String s) {
+		title=s;
+	}
+}
+
+public class Abstract_class_ex_MyBook {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		String booktitle=s.nextLine();
+		MyBook mybook=new MyBook();
+		mybook.setTitle(booktitle);
+		System.out.println("The title is: "+mybook.getTitle());
+
+	}
+
+}
